@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+@font-face {
+    font-family: 'Open-sans';
+    src: url("../fonts/OpenSans-Regular.ttf");
+    font-size: 1em;
+}
+@font-face {
+    font-family: 'Open-sans-light';
+    src: url("../fonts/OpenSans-Light.ttf");
+    font-size: 1em;
+}
+@font-face {
+    font-family: 'Open-sans-bold';
+    src: url("../fonts/OpenSans-Bold.ttf");
+    font-size: 1em;
+}
+header{
+    width: 100%;
+    height: 150px;
+    background: rgba(94, 41,154, .8);
+}
+
+header .container{
+    position: relative;
+    
+}
+header .header-black{
+    height: 40px;
+    background: #000;
+}
+header .header-black li{
+    list-style-type: none;
+    background-image: url("../images/clubs.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 4px 5px;
+}
+header .header-black li.club-01{
+    background-position: 0px 0px;
+}
+header .header-black li.club-02{
+    background-position: -48px 0px;
+}
+header .header-black li.club-03{
+    background-position: -92px 0px;
+}
+header .header-black li.club-04{
+    background-position: -140px 0px;
+}
+header .header-black li.club-05{
+    background-position: -190px 0px;
+}
+header .header-black li.club-06{
+    background-position: -240px 0px;
+}
+header .header-black li.club-07{
+    background-position: -290px 0px;
+}
+header .header-black li.club-08{
+    background-position: -331px 0px;
+}
+
+header .header-black li.club-09{
+    background-position: -380px 0px;
+}
+
+header .header-black li.club-10{
+    background-position: -430px 0px;
+}
+
+
+header .header-black li.club-11{
+    background-position: -480px 0px;
+}
+
+header .header-black li.club-12{
+    background-position: -530px 0px;
+}
+
+header .header-black li.club-13{
+    background-position: -578px 0px;
+}
+
+header .header-black li.club-14{
+    background-position: -630px 0px;
+}
+
+header .header-black li.club-15{
+    background-position: -678px 0px;
+}
+
+header .header-black li.club-16{
+    background-position: -723px 0px;
+}
+
+header .header-black li.club-17{
+    background-position: -764px 0px;
+}
+
+header .header-black li.club-18{
+    background-position: -856px 0px;
+}
+header .header-black li.club-19{
+    background-position: -905px 0px;
+}
+header .header-black li.club-20{
+    background-position: -950px 0px;
+}
+header .header-black li.club-21{
+    background-position: -1000px 0px;
+}
+
+header .header-black li a{
+    width: 32px;
+    height: 32px;
+    display: block;    
+}
+header #logotipo{
+    position: absolute;
+    top: 19px;
+    z-index: 3;
+}
+
+#banner h1.efeito{
+    color:red;
+    font-size:10em;
+    transition:1s;
+}
+
+#menu{
+    position: relative;
+    margin-top: 20px;
+}
+
+#menu li{
+    display: inline-block;
+    font-family: Open-sans;
+}
+
+#menu li a {
+    padding: 10px 25px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#menu li.search {
+    position: relative;    
+    width: 182px;
+    bottom: 0;
+    transition: 1s;
+}
+#menu li.search.ativo{
+    width: 300px;
+}
+
+#menu li.search input{
+    height: 30px;
+    background-color: #5c2d90;
+    border: none;
+    color: #fff;
+    line-height: 30px;
+}
+
+#menu li.search.ativo input{
+    width: 300px;
+}
+    
+#menu li.search button{
+    background: none;
+    border: none;
+}
+#menu li.search button{
+    color: rgba(255,255,255, .5);
+    font-size: 14px;
+}
+
+#menu li.search ::-webkit-input-placeholder{
+    color: rgba(255,255, 255, .5);
+    bottom: 0;
+}
+.input-group{
+    position: absolute;
+    top: -20px;
+}
+
+.input-group-btn{
+    position: absolute;
+    right: 35px;
+}
+
+#banner{
+    width: 100%;
+    height: 728px;
+    position: relative;
+    background: url('../images/banner.jpg') no-repeat;
+    background-position: 0 -110px;
+    top: -130px;
+    line-height: 20px;
+    z-index: -1;
+}
+#banner h1{
+    transition: 1s;
+    position: relative;
+    top: 290px;
+    font-size: 92px;
+    font-family: 'Open-sans-light';
+    color: #fefefe;
+    text-shadow: 2px 2px rgba(0,0,0, .3);
+    margin-left: 50px;
+}
+#banner h1 small{
+    font-size: 32px;
+    font-family: 'Open-sans-light';
+    color: #fefefe;
+}
+#news{
+    position: relative;
+    top: -150px;
+}
+#news h2{
+    position: relative;
+    font-family: "open-sans-light";
+    font-size: 42px;
+    text-align: center;
+    color: #5e2799;
+}
+#news hr{
+    border: #FDE192 3px solid;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#news .thumbnails{
+    margin-top: 20px;
+    border: none;
+}
+
+#news .thumbnails .item-inner{
+    padding: 10px;
+}
+
+#news .thumbnails .item-inner img{
+    width: 100%;
+}
+
+#news h3{
+    color: #5e299a;
+    font-family: 'open-sans-bold';
+    font-size: 18px;
+    margin-bottom: 0;
+}
+#news time{
+    font-family: 'open-sans-light';
+    font-size: 18px;
+    color: #a7a7a7;
+}
+
+#estatisticas{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: -100px;
+    background-color: #5E299A;   
+    text-align: center;
+}
+
+#estatisticas p{
+    margin-top: 36px;
+    color: #fde192;
+    font-family: 'open-sans-light';
+    font-size: 64px;
+    text-transform: uppercase;
+}
+#estatisticas p small{
+    color: #ffffff;
+    font-family: 'open-sans-light';
+    font-size: 24px;
+    text-transform: uppercase;
+    display: block;
+}
+#call-to-action .row-max-400{
+    margin: 0 auto;
+    max-width: 400px;
+
+}
+
+#call-to-action h2{
+    position: relative;
+    font-family: "open-sans-light";
+    font-size: 42px;
+    text-align: center;
+    color: #5e2799;
+    
+}
+#call-to-action hr{
+    border: #FDE192 3px solid;
+    width: 200px;
+    margin: 0 auto;    
+}
+
+#call-to-action p{
+    margin: 60px 0 40px;
+    color: #656565;    
+}
+
+#call-to-action .btn{
+    min-width: 164px;
+    height: 44px;
+    line-height: 30px;
+    border-radius: 0;
+}
+
+#call-to-action .btn-roxo{
+    color: #FFFFFF;
+    background-color: #5e299a;
+    border-color: #5e299a;
+}
+
+#call-to-action .btn-amarelo{
+    color: #000000;
+    background-color:#fde192;
+    border-color: #fde192;
+}
+
+footer{
+    position: relative;
+    margin: 100px 0 0 0;
+    bottom: 0!important;
+}
+
+footer .row{
+    width: 100%;    
+    margin-left: 0;
+    margin-bottom: 0!important;
+}
+footer .row p{
+    line-height: 63px;
+}
+footer .row-cinza-claro{
+    height: 200px;
+    background-color: #11171d;
+}
+
+footer .row-cinza-escuro{
+    height: 60px;
+    background-color: #171f26;
+    border-top: solid 1px #242D37;
+}
+
+footer .row-cinza-escuro .pull-left{
+    color: #525355;
+    font-size: 14px;
+}
+
+footer .row-cinza-escuro .pull-right{
+    font-family: 'open-sans-bold';
+    color: #623291;
+    font-size: 14px;
+}
+footer .brasao{
+    margin: 20px 0 0 0;
+}
+
+footer h4{
+    margin-top: 40px;
+    font-family: 'open-sans-light';
+    font-size: 16px;
+    color: #ffffff;
+    border-bottom: 1px solid #242D37;
+    padding-bottom: 17px;
+    text-transform: uppercase;
+}
+
+footer .row-cols h5{
+    font-family: Arial;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0;
+}
+footer .row-cols time{
+    font-family: Arial;
+    font-size: 14px;
+    color: #FDE092;
+    line-height: 10px;
+}
+
+footer .col-links a{
+    color: #fefefe;
+    font-size: 14px;
+    font-family: Arial;
+}
+footer .col-links .fa {
+	margin: 0 6px;
+}
+footer .col-get-in-touch address {
+	color:#666;
+	font-family: Arial;
+	font-size: 14px;
+	margin-bottom: 6px;
+}
+footer .col-get-in-touch address span {
+	display: inline-block;
+}
+footer .col-get-in-touch address i {
+	position: relative;
+	top: -14px;
+}
+footer .col-get-in-touch i {
+	color: #9B9B9B;
+	font-size: 20px;
+	margin: 0 6px;
+
+}
+footer .col-get-in-touch a {
+	color: #666;
+}
+footer .col-get-in-touch p {
+	line-height: 20px;
+}
+footer .list-socials {
+	margin-top: 4px;
+}
+footer .list-socials li {
+	display: inline-block;
+	margin-right: 8px;
+}
+footer .list-socials a {
+	display: block;
+	border: #9B9B9B 1px solid;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 14px;
+	text-align: center;
+}
+footer .list-socials i {
+	font-size: 16px;
+	margin: 7px auto;
+}
